@@ -1,66 +1,214 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>My Portfolio</title>
-    <link href="css/site.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="css/blueimp-gallery.min.css">
-    <script
-      src="https://code.jquery.com/jquery-3.2.1.min.js"
-      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-      crossorigin="anonymous"></script>
-  </head>
-  <body>
-    <header>
-      <h1>My Portfolio</h1>
-    </header>
-    <section>
-      <nav>
-        <!-- The Gallery as inline carousel, can be positioned anywhere on the page -->
-        <div id="blueimp-gallery-carousel" class="blueimp-gallery blueimp-gallery-carousel">
-          <div class="slides"></div>
-          <h3 class="title"></h3>
-          <a class="prev">‹</a>
-          <a class="next">›</a>
-          <a class="play-pause"></a>
-          <ol class="indicator"></ol>
-        </div>
-        <div id="links">
-          <a href="img/harddisk.jpg">Hard Drive</a>
-          <a href="img/apple.jpg">An Old Apple Computer</a>
-          <a href="img/cpu.jpg">An Old Athlon Cpu</a>
-        </div>
-      </nav>
-      <article>
-        <h2>Hi!</h2>
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris
-          ultricies ante non lacus vehicula pharetra. Cras velit urna, vulputate
-          sed commodo at, <a href="#">rutrum eget</a> erat. Suspendisse sapien eros, dignissim
-          vel aliquam eu, volutpat id dolor. Mauris id orci egestas, mattis orci
-          ut, consectetur mi. In vestibulum eget libero at pharetra. Suspendisse
-          dictum nunc sit amet nibh laoreet vehicula. </p>
-        <img src="img/portfolio.jpg" alt="leather portfolio" />
-        <p>Integer bibendum vel leo sit amet tincidunt. Fusce rutrum arcu a dui
-          molestie, eget cursus metus imperdiet. Duis non risus eget purus
-          venenatis sollicitudin. Quisque <a href="#">tempus congue nisl</a>, non laoreet sapien
-          suscipit a. Vestibulum ante ipsum primis in faucibus orci luctus et
-          ultrices posuere cubilia Curae; Nulla facilisi.</p>
-        <p>Maecenas et ligula sollicitudin, elementum lorem non, gravida tellus.
-          Maecenas elementum quam sit amet malesuada ullamcorper. Aliquam
-          volutpat feugiat magna, vel semper enim posuere non. Donec mi dui,
-          aliquet eget egestas ut, efficitur at dolor. Mauris consectetur nec
-          velit at varius. Vestibulum sit amet dignissim lacus.</p>
-      </article>
-    </section>
-  <script src="js/blueimp-gallery.min.js"></script>
-  <script>
-    blueimp.Gallery(
-        document.getElementById('links').getElementsByTagName('a'),
-        {
-            container: '#blueimp-gallery-carousel',
-            carousel: true
-        }
-    );
-  </script>
-  </body>
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio | Steve Earle</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- 
+   Online Portfolio
+   Author: Steve Earle
+   Date: Dec. 1st, 2017
+	 -->
+
+  	<!-- Facebook and Twitter integration -->
+	<meta property="og:title" content=""/>
+	<meta property="og:image" content=""/>
+	<meta property="og:url" content=""/>
+	<meta property="og:site_name" content=""/>
+	<meta property="og:description" content=""/>
+	<meta name="twitter:title" content="" />
+	<meta name="twitter:image" content="" />
+	<meta name="twitter:url" content="" />
+	<meta name="twitter:card" content="" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- <link href='https://fonts.googleapis.com/css?family=Work+Sans:400,300,600,400italic,700' rel='stylesheet' type='text/css'> -->
+	
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
+	</head>
+	<body style="background-image: url(images/bg_img.jpg);">
+	
+	<div id="fh5co-main">
+		<div class="fh5co-tab-wrap">
+			<ul class="fh5co-tab-menu">
+				<li class="active"><a href="#" data-tab="1"><span class="icon icon-home"></span><span class="menu-text">Main</span></a></li>
+				<li><a href="#" data-tab="2"><span class="icon icon-book"></span><span class="menu-text">Education</span></a></li>
+				<li><a href="#" data-tab="3"><span class="icon icon-hand-o-up"></span><span class="menu-text">Goals</span></a></li>
+				<li><a href="#" data-tab="4" data-pie="yes"><span class="icon icon-wrench"></span><span class="menu-text">Skills</span></a></li>
+        <li><a href="#" data-tab="5" data-pie="yes"><span class="icon icon-file-text"></span><span class="menu-text">Resume</span></a></li>
+        <li><a href="#" data-tab="6" data-pie="yes"><span class="icon icon-mail-forward"></span><span class="menu-text">Contact</span></a></li>
+			</ul>
+			<div class="fh5co-tab-content active" data-content="1">
+				<div class="fh5co-content-inner text-center">
+					<div class="row row-bottom-padded-sm">
+						<div class="col-md-12">
+							<figure>
+								<img src="images/profile.png" alt="Picture of me">
+							</figure>
+							<h1>Steve Earle</h1>
+							<p>Programmer/developer currently attending NSCC for the 'IT Programming' focus.</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content" data-content="2">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<p>My education includes:</p>
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-book"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2001-2004</h2>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-book"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2004-2008</h2>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-book"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2008-2012</h2>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content" data-content="3">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+
+							<p>I have the privilege to work with these cool companies.</p>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2008 - Present</h2>
+									<h3>XYZ Inc.</h3>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>2004-2008</h2>
+									<h3>Previous Ltd Co.</h3>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+							<div class="fh5co-feature">
+								<div class="fh5co-icon">
+									<i class="icon-black-tie"></i>
+								</div>
+								<div class="fh5co-text">
+									<h2>1999-2004</h2>
+									<h3>Previous Ltd Co.</h3>
+									<p>Far far away, behind the word mountains, far from the countries.</p>
+								</div>
+							</div>
+
+						</div>
+						
+					</div>
+				</div>
+			</div>
+			<div class="fh5co-tab-content" data-content="4">
+				<div class="fh5co-content-inner">
+					<div class="row">
+						<div class="col-md-12">
+							<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="95"><span><strong>HTML5</strong>95%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="93"><span><strong>CSS3</strong>93%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="90"><span><strong>jQuery</strong>90%</span></div>
+						</div>
+
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="89"><span><strong>PHP</strong>89%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="85"><span><strong>MySQL</strong>85%</span></div>
+						</div>
+						<div class="col-md-4 col-sm-6 col-xs-12 text-center">
+							<div class="chart" data-percent="90"><span><strong>AngularJS</strong>90%</span></div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<footer id="fh5co-footer">
+			<div class="row">
+				<div class="col-md-6 col-md-offset-3 text-center">
+					<small>
+						&copy; 2016 Personal Free HTML5 Template. All Rights Reserved. <span class="fh5co-author">
+						Designed by <a href="http://freehtml5.co" target="_blank">FreeHTML5.co</a> Demo Images: <a href="http://unsplash.com/" target="_blank">Unsplash</a></span>
+					</small>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Easy PieChart -->
+	<script src="js/jquery.easypiechart.min.js"></script>
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+
+	</body>
 </html>
+
