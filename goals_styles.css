@@ -1,0 +1,130 @@
+@charset "utf-8";
+
+/*
+   Online Portfolio Style Sheet
+   Author: Steve Earle
+   Date: Dec. 1st, 2017
+   Website: w0263155.github.io
+   Filename: goals_styles.css
+*/
+
+/* ===========
+   Base Styles
+   ===========
+*/
+
+
+/* HTML and Body Styles */
+
+html {
+   background: url(back.png) center center / cover no-repeat fixed;
+   height: 100%;
+   width: 100%;
+   font-family: Lucida Sans Unicode, Lucida Grande, sans-serif;
+   font-size: 15px;
+}
+
+body {
+   background: rgba(0, 0, 0, 0.4);   
+   box-shadow: rgb(51, 51, 51) 5px 0px 15px,
+               rgb(51, 51, 51) -5px 0px 15px;
+   margin: 40px auto;
+   min-height: 100%;
+   min-width: 200px;
+   max-width: 1024px;
+   width: 100%;
+}
+
+
+/* Body Header Styles */
+
+body header {
+   background: rgba(0,0,0,0.4);   
+}
+
+body header > img {
+   display: block;
+   width: 100%;
+}
+
+
+/* Horizonal Navigation Styles */
+
+ul > mainmenu {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+li a:hover {background-color: rgba(100,100,100,0.4)}
+
+li a{
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  float: left;
+}
+
+header > div > nav {
+	display: table;
+	width: 98%;
+  position: relative;
+  top: 20px;
+  left: 10px;
+}
+
+header > div > nav > ul {
+	display: table-row;
+	list-style-type: none;
+  position: relative
+}
+
+header > div > nav > ul > li {
+	display: table-cell;
+  position: relative
+}
+
+
+/* Section Styles */
+
+section#main {
+   background: rgba(200, 200, 200,0.9);
+}
+
+
+/* Article Styles */
+
+article#goals {
+   padding: 10px;
+}
+
+article#goals h1 {
+   color: black;
+   font-size: 2em;
+   letter-spacing: 0.2em;
+   line-height: 1em;
+   margin: 10px 0px 20px 0px;
+   padding-left: 2px;
+}
+
+article#goals ul {
+  list-style-type: circle;
+  margin: 10px 0px 20px 0px;
+  padding-left: 12px;
+}
+
+
+/* Footer Styles */
+
+footer {
+   background-color: rgba(0, 0, 0, 0.4);
+   color: white;
+   font-size: 0.9em;
+   text-align: center;
+   padding: 10px 0px;
+}
+
